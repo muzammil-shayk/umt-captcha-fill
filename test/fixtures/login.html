@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- Hand-written fixture mimicking the portal login structure. Not copied from the live site. -->
+<html>
+<head>
+  <title>Login</title>
+  <style>.captcha { text-transform: uppercase; } #SecurityCode { text-transform: uppercase; }</style>
+</head>
+<body>
+  <form id="loginform" method="post" action="/Account/Login">
+    <input type="text" id="student_id" name="student_id" value="">
+    <input type="password" id="Password" name="Password" value="">
+    <div class="captcha-box">
+      <span class="captcha"> aB3xZ </span>
+      <input type="text" id="SecurityCode" name="SecurityCode" value="">
+    </div>
+    <button type="submit" id="loginbtn">Login</button>
+  </form>
+</body>
+</html>

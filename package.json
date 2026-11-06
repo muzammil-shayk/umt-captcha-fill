@@ -1,0 +1,16 @@
+{
+  "name": "umt-captcha-fill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial Firefox extension that copies the plain-text captcha into the captcha field on the UMT student portal login page.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "lint": "web-ext lint --source-dir . --ignore-files test store dist node_modules package.json package-lock.json '.*'",
+    "build": "web-ext build --source-dir . --artifacts-dir dist --overwrite-dest --ignore-files test store dist node_modules package.json package-lock.json '.*'"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "web-ext": "10.8.0"
+  }
+}
